@@ -1,0 +1,626 @@
+/*  background-color: rgba(162, 254, 126, 0.447); 
+    background-color: rgba(126, 173, 254, 0.447);
+    background-color: rgba(194, 126, 254, 0.447);
+
+*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root
+{
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.4rem;
+}
+header
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 22px 10%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+}
+.logo
+{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 700;
+}
+span
+{
+    color:rgb(255, 213, 0);
+}
+.navlist
+{
+    display: flex;
+}
+.navlist a
+{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 20px;
+    transition: all .45s ease;
+    color: rgb(255, 255, 255);
+}
+.navlist a:hover
+{
+    color:rgb(255, 213, 0);
+}
+.navlist a.active
+{
+    color:rgb(255, 213, 0);
+}
+#menu-icon
+{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+}
+
+/* home */
+section
+{
+    padding: 130px 15% 120px;
+}
+.home
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/bg7.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.one
+{
+    display: inline-block;
+    margin-right: 15px;
+    height: 32px;
+    font-size: 50px;
+    color: aliceblue;
+    margin-top: 175px;
+}
+.two
+{
+    font-size: 25px;
+}
+.name
+{
+    font-size: var(--big-font);
+    color:rgb(255, 255, 255);
+}
+.button
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn1
+{
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    font-size: 23px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: all .45s ease;
+}
+.btn1 span i
+{
+    margin-right: 15px;
+    display: inline;
+    margin: 10px ;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.btn1:hover
+{
+    transform: scale(0.9);
+}
+header.sticky
+{
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid black;
+    padding: 20px 10%;
+}
+
+/* About */
+
+.about
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 5.5rem;
+    background-color: rgba(191, 191, 191, 0.399);
+}
+.about-img img
+{
+    height: 650px;
+    max-width: 530px;
+    width: 100%;
+    border-radius: 8px;
+}
+.about-text h2
+{
+    line-height: 1;
+    font-size: var(--h2-font);
+    text-decoration: underline;
+}
+.about-text h4
+{
+    font-size: 24px;
+    font-weight: 600px;
+    color: black;
+    margin: 15px 0 30px;
+    line-height: 1.3;
+}
+.about-text p
+{
+    font-size: var(--p-font);
+    color: rgb(0, 0, 0);
+    margin-bottom: 3rem;
+    line-height: 1.4;
+}
+
+/* Service */
+
+.main-text
+{
+    text-align: center;
+}
+.main-text p
+{
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: black;
+}
+.main-text h2
+{
+    font-size: var(--h2-font);
+    line-height: 1;
+    text-decoration: underline;
+}
+.service-content
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3,1fr));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+.box
+{
+    background-color: black;
+    color: aliceblue;
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+.box:hover
+{
+    background-color: rgb(136, 0, 255);
+}
+.box-cont
+{
+    color: black;
+}
+.s-icons i
+{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.box h2 
+{
+    font-size: 30px;
+    font-weight: 600;
+    color: aliceblue;
+    margin-bottom: 15px;
+}
+.box p
+{
+    color: aliceblue;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+.rm
+{
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: rgb(45, 45, 45);
+    color:rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+/* Portfolio */
+
+.portfolio
+{
+    background-color: rgba(191, 191, 191, 0.399);
+}
+.portfolio-content
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px,auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+.row
+{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 100%;
+}
+.row img
+{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+.row:hover img
+{
+    transform: scale(1.1);
+}
+.row:hover .layer
+{
+    height: 100%;
+}
+
+.layer
+{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.1), #fffb00); 
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+.layer h2
+{
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.layer p
+{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* certificate */
+
+
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.certificate
+{
+  background-color: rgba(191, 191, 191, 0.399);
+}
+.certi-text
+{
+    font-size: var(--h2-font);
+    line-height: 1;
+    text-decoration: underline;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+
+.wrapper{
+  display: flex;
+  max-width: 1200px;
+  position: relative;
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #f2f2f2;
+}
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 340px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
+}
+
+
+/* Contact Me */
+
+.Contact
+{
+    background: black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.contact-text h4
+{
+    color: white;
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact-text h2
+{
+    font-size: var(--h2-font);
+    text-decoration: underline solid white;
+    color: white;
+    line-height: 1;
+}
+.contact-text p
+{
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    font-size: var(--p-font);
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.list
+{
+    margin-bottom: 2.8rem;
+}
+.list li
+{
+    margin-bottom: 12px;
+}
+.list li a
+{
+    display: grid;
+    color: white;
+    font-size: 17px;
+    transition: all .45s ease;
+
+}
+.list li a:hover
+{
+    color:rgb(255, 213, 0);
+    transform: translateX(5px);
+}
+.contact-icon i
+{
+    height: 45px;
+    width: 45px;
+    background: rgb(255, 213, 0);
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+.contact-icon i:hover
+{
+    background: white;
+    color: rgb(255, 213, 0);
+}
+.contact-form form
+{
+    position: relative;
+}
+.contact-form form input,form textarea
+{
+    width: 100%;
+    padding: 14px;
+    background: rgb(31, 30, 30);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;       
+}
+.contact-form textarea
+{
+    resize: none;
+    height: 250px;
+}
+.contact-form .submit
+{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    background: rgb(255, 213, 0);
+    color: rgb(0, 0, 0);
+    width: 140px;
+    transition: all .45s ease;
+}
+.contact-form .submit:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1480px)
+{
+    header
+    {
+        padding: 12px 2.5%;
+        transition: .1s;
+    }
+    header.sticky
+    {
+        padding: 10px 2.5%;
+        transition: .1s;
+    }
+}
+@media (max-width: 1100px)
+{
+    :root
+    {
+        --big-font: 4rem;
+        --h2-font: 2.5rem;
+        --p-font: 1rem;
+        transition: .1s;
+    }
+    .name
+    {
+        font-size: 2.5rem;
+    }
+    .home
+    {
+        height: 87vh;
+    }
+}
+
+@media (max-width: 920px)
+{
+    .about
+    {
+        grid-template-columns: 1fr;
+    }
+    .about-img
+    {
+        text-align: center;
+        order: 2;
+    }
+    .about-img img
+    {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    .Contact
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 920px)
+{
+    #menu-icon
+    {
+        display: block;
+    }
+    .navlist
+    {
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: rgb(0, 0, 0);
+        text-align: left;
+        transition: all .45s ease;
+    }
+    .navlist a
+    {
+        display: block;
+        margin: 17px;
+        font-size: 20;
+        transition: all .45s ease;
+        color: white;
+    }
+    .navlist a:hover
+    {
+        color:rgb(255, 213, 0);
+    }
+    .navlist a.active
+    {
+        color:rgb(255, 213, 0);
+    }
+    .navlist.open
+    {
+        top: 100%;
+    }
+}
